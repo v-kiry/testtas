@@ -1,0 +1,64 @@
+.intro__btn
+    position: absolute
+    z-index: 199
+    bottom: 0px
+    left: 0
+    right: 0
+    width: 84px
+    height: 28px
+    margin: 0 auto
+    background:#ffffff url('../img/arrowup.png') no-repeat center
+    
+.intro-pop
+    position: absolute
+    z-index: 200
+    bottom: -400px
+    left: 0
+    right: 0
+    transition: 0.5s ease
+    &__btn
+        width: 84px
+        height: 28px
+        margin: 0 auto
+        background:#ffffff url('../img/arrow.png') no-repeat center
+    &-wrap
+        display: flex
+    &-content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding: 17px 20px 8px 15px
+        background-color:#ffffff
+        &_orange
+            background-color:#e2d1a6
+        &_black
+            background-color:#000000
+        &__title
+            color: #000000
+            font-family: "Playfair Display"
+            font-size: 28px
+            font-weight: 700
+            line-height: 30px
+            margin-bottom: 5px
+            &_white
+                color: #ffffff
+        &__text
+            color: #000000
+            font-size: 16px
+            font-weight: 400
+            line-height: 24.99px
+            &_white
+                color: #ffffff
+        &__link
+            color:#000000
+            text-decoration: none
+            font-size: 18px
+            font-weight: 400
+            line-height: 24.99px
+            transition: 0.2s
+            align-self: flex-end
+            &_white
+                color: #ffffff
+            &:hover
+                color: #ffffff
+                text-decoration: underline

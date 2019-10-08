@@ -1,0 +1,96 @@
+.header
+    background: #353436
+    &-wrap
+
+        &__reserved-area
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            &-title
+                text-decoration: none
+                color: #ffffff
+                font-size: 14px
+                font-weight: 400
+                line-height: 24px
+                text-transform: uppercase
+                transition: .2s
+                &:hover
+                    color: #e2d1a6
+                    
+            &-icon
+                margin-left: 10px
+
+        
+        &__nav
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 23px
+            flex-wrap: wrap
+            &-logo
+                @media screen and ( max-width: 857px )
+                    margin-bottom: 20px  
+            &-menu
+                align-self: flex-end
+                &-first
+                    display: flex
+                    align-self: flex-end
+                    flex-wrap: wrap
+                    position: relative
+                    margin: 0
+                    padding: 0
+                    li 
+                        list-style: none
+                        margin: 0
+                        margin-right: 27px
+                        padding: 0
+                        &:last-child
+                            margin-right: 0
+                        &:hover ul
+                            display: block
+                &-second
+                    display: none
+                    position: absolute
+                    margin: 0
+                    padding: 0
+                    background-color: #353436
+                    z-index: 101
+                    li
+                        margin: 0
+                        padding: 0 9px 0 8px 
+                        &::before
+                            content: ''
+                            display: block
+                            border-top: 1px solid #ffffff
+                            margin: 3px 0
+                            width: 132px
+                        &:first-child::before
+                            content: none
+                        &:first-child
+                            padding-top: 31px
+                        &:last-child
+                            padding-bottom: 10px
+                    
+                &-link  
+                    text-decoration: none
+                    color: #ffffff
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 24px
+                    text-transform: uppercase
+                    transition: .2s
+                    &_active
+                        font-weight: 700
+                        color: #e2d1a6
+                        
+                    &_font
+                        font-size: 16px
+                        margin-left: 8px
+
+                    &:hover
+                        color: #e2d1a6
+
+    
+
+                           
+

@@ -1,0 +1,45 @@
+.slider
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 1
+    &__item 
+    
+        &-img
+            width: 100%
+            height: calc( 100vh - 130px )
+            background: url('../img/intro.jpg') no-repeat center
+            background-size: cover
+
+        
+
+    &__dots 
+        position: absolute
+        bottom: 0
+        left: 0 
+        right: 0
+        bottom: 38px  
+        list-style: none
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 0
+        margin: 0
+        li
+            width: 15px
+            height: 15px
+            background: #ffffff
+            border: 2px solid #000000
+            border-radius: 50%
+            margin: 0
+            &:nth-child(2)
+                margin: 0 9px 0 9px
+                
+            &.slick-active
+                background-color: #e2d1a6
+ 
+        button
+            display: none
